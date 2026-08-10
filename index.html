@@ -1,1 +1,871 @@
-<!DOCTYPE html><html lang="it"><head><meta charset="UTF-8"><title>MOA Agentic Operating Model | Agic</title><style>body{margin:0;font-family:Arial,sans-serif;background:#121320;color:#E5E5E5;line-height:1.6}h1,h2,h3{color:#fff}header{padding:80px 24px;text-align:center}header h1{font-size:2.4rem;color:#EB5E2D}nav{position:sticky;top:0;background:#121320;display:flex;justify-content:center;gap:20px;padding:16px;flex-wrap:wrap;border-bottom:1px solid rgba(255,255,255,0.1)}nav a{color:#E5E5E5;text-decoration:none;font-size:0.9rem;margin:0 4px}main{max-width:900px;margin:0 auto;padding:40px 24px}section{margin-bottom:56px}section h2{border-left:4px solid #DC0278;padding-left:16px}section h3{color:#EB5E2D}.card{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.1);border-radius:10px;padding:20px;margin-top:14px}.traits{display:flex;flex-wrap:wrap;gap:10px;margin-top:14px}.trait{background:#DC0278;color:#fff;padding:8px 14px;border-radius:999px;font-size:0.85rem}footer{text-align:center;padding:40px 24px;border-top:1px solid rgba(255,255,255,0.1);font-size:0.85rem}footer .payoff{font-weight:700;color:#fff;font-size:1.05rem}</style></head><body><nav><a href="#problema">Il problema</a><a href="#paradigma">Cambio</a><a href="#azione">MOA in azione</a><a href="#decision-rights">Decision Rights</a><a href="#value">Value Realization</a><a href="#risk">AI Risk Gate</a><a href="#radici">Radici</a><a href="#agic">Perche Agic</a></nav><header><h1>MOA - Agentic Operating Model</h1><p>From AI experimentation to scalable business value</p></header><main><section id="problema"><h2>Il problema che MOA risolve</h2><p>Molte aziende oggi hanno accesso all'AI: hanno lanciato POC, demo e sperimentazioni.Ma poche riescono a portarle davvero in produzione. Il gap non e tecnologico: e la traduzione operativa dell'AI in valore di business misurabile.La vera sfida non e capire l'intelligenza artificiale, ma sapere dove e come usarla per generare valore concreto.</p></section><section id="paradigma"><h2>Il cambio di paradigma</h2><p>Da anni le aziende sperimentano con AI, ma con un approccio che non genera valore sistemico.Il passaggio e chiaro: da use case isolati a portafoglio AI gestito, da sperimentazione spot a sistema industriale ripetibile,da valore episodico e non misurato a valore continuo e misurabile.</p></section><section id="azione"><h2>MOA in azione: due layer</h2><h3>MOA Portfolio</h3><div class="card"><p>Il primo layer identifica, valuta,prioritizza e attiva use case e agenti AI: Demand Generation, Use Case Pipeline, MOA Scoring e Activation.</p></div><h3>MOA Control Tower</h3><div class="card"><p>Il secondo layer governa il ciclo di vita degli agenti AI: Decision Rights, AI Risk Gate,Value Realization, Lifecycle Management, Development Playbook e Adoption and Capability Building.</p></div></section><section id="decision-rights"><h2>Decision Rights: non chi esegue, ma chi decide</h2><p>MOA introduce un principio chiave: il vero collo di bottiglianon e chi esegue un'attivita, ma chi ha il diritto di decidere. Il framework definisce quattro decisioni: Portfolio, Execution, Value e Risk Decisions,distribuite su una governance con Steering Committee AI, AI Working Team, Business Champion, Business Sponsor, Product Owner e IT Owner.</p></section><section id="value"><h2>Value Realization: dimostrare il valore</h2><p>Un agente AI senza una misura di valore non e dimostrabile.MOA applica una catena precisa: KPI, Baseline, Target, Misurazione, Beneficio, Valore economico.Se manca anche solo uno di questi elementi, il valore non puo essere dimostrato ne comunicato al business.</p></section><section id="risk"><h2>AI Risk Gate: gestire il rischio</h2><p>MOA valuta ogni agente su cinque dimensioni di rischio:Data Risk, Decision Risk, Business Impact Risk, Autonomy Risk e Adoption Risk.Da questa valutazione derivano un Risk Score e una Risk Class, che determinano i controlli e le approvazioni necessarie.</p></section><section id="radici"><h2>Le radici di MOA e cosa lo distingue</h2><p>MOA nasce da tre radici: benchmark di mercato, esperienza diretta Agic sul campoe ascolto del contesto cliente. Si collega e si differenzia da Portfolio Management, AI Operating Model, NIST AI RMF,Microsoft CAF AI Adoption e Agile Product Delivery, integrando i principi migliori per gli agenti AI.</p><h3>Cinque tratti distintivi</h3><p>MOA e business-first, portfolio-native, execution-linked, agent-specific e value-measured:parte dal valore di business, ragiona per portafoglio, si collega all'esecuzione e misura sempre il valore generato.</p><div class="traits"><span class="trait">Business-first</span><span class="trait">Portfolio-native</span><span class="trait">Execution-linked</span><span class="trait">Agent-specific</span><span class="trait">Value-measured</span></div></section><section id="agic"><h2>Perche scegliere MOA con Agic</h2><p>Agic accompagna le aziende dall'idea alla scala: non solo tecnologia,un modello operativo per trasformare l'AI in valore misurabile, governato e sostenibile nel tempo.MOA rende concreto questo percorso, dal primo use case fino a un intero portafoglio di agenti AI in produzione.</p></section></main><footer><div class="payoff">Amplify the future.</div><div>Agic - MOA Agentic Operating Model</div></footer></body></html>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOA Agentic Operating Model | Agic</title>
+
+  <style>
+    :root {
+      --bg: #121320;
+      --bg-soft: #181927;
+      --bg-card: rgba(255, 255, 255, 0.055);
+      --text: #E5E5E5;
+      --muted: #A9ABB8;
+      --white: #FFFFFF;
+      --orange: #EB5E2D;
+      --magenta: #DC0278;
+      --border: rgba(255,255,255,0.10);
+      --shadow: 0 30px 80px rgba(0,0,0,0.35);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(220,2,120,0.20), transparent 32%),
+        radial-gradient(circle at top right, rgba(235,94,45,0.16), transparent 30%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      padding: 16px 22px;
+      flex-wrap: wrap;
+      background: rgba(18,19,32,0.88);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      transition: color 0.2s ease;
+      white-space: nowrap;
+    }
+
+    nav a:hover {
+      color: var(--white);
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header.hero {
+      min-height: 78vh;
+      display: grid;
+      align-items: center;
+      padding: 88px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 56px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--orange);
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 18px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--orange);
+      display: inline-block;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: clamp(3rem, 8vw, 6.6rem);
+      line-height: 0.9;
+      letter-spacing: -0.08em;
+      margin: 0 0 18px;
+    }
+
+    .hero-title-accent {
+      color: var(--orange);
+    }
+
+    .hero h2 {
+      font-size: clamp(1.7rem, 4vw, 3.7rem);
+      line-height: 1.05;
+      letter-spacing: -0.04em;
+      margin: 0 0 22px;
+      color: var(--white);
+      max-width: 760px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.12rem;
+      max-width: 640px;
+      margin-bottom: 30px;
+    }
+
+    .cta-row {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 18px;
+      border-radius: 999px;
+      font-size: 0.94rem;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid var(--border);
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--magenta), var(--orange));
+      color: var(--white);
+      border: none;
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.04);
+      color: var(--white);
+    }
+
+    .hero-panel {
+      background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.035));
+      border: 1px solid var(--border);
+      border-radius: 32px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-panel::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -45% auto;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba(220,2,120,0.26), transparent 65%);
+      pointer-events: none;
+    }
+
+    .agent-stack {
+      display: grid;
+      gap: 14px;
+      position: relative;
+      z-index: 2;
+    }
+
+    .stack-card {
+      background: rgba(18,19,32,0.7);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .stack-card strong {
+      color: var(--white);
+      display: block;
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+
+    .stack-card span {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .stack-center {
+      background: linear-gradient(135deg, rgba(220,2,120,0.25), rgba(235,94,45,0.20));
+      border-color: rgba(235,94,45,0.35);
+    }
+
+    main {
+      padding-bottom: 70px;
+    }
+
+    section {
+      padding: 80px 0;
+      border-top: 1px solid rgba(255,255,255,0.06);
+    }
+
+    .section-header {
+      max-width: 780px;
+      margin-bottom: 34px;
+    }
+
+    .section-kicker {
+      color: var(--magenta);
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--white);
+      font-size: clamp(2rem, 4vw, 3rem);
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin: 0 0 15px;
+    }
+
+    .section-header p {
+      color: var(--muted);
+      font-size: 1.05rem;
+      margin: 0;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.16);
+    }
+
+    .card h3 {
+      color: var(--white);
+      margin: 0 0 10px;
+      font-size: 1.12rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      margin: 0;
+      font-size: 0.96rem;
+    }
+
+    .icon {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 14px;
+      background: rgba(220,2,120,0.16);
+      color: var(--white);
+      margin-bottom: 16px;
+      font-weight: 800;
+    }
+
+    .big-statement {
+      padding: 68px 34px;
+      border-radius: 34px;
+      background:
+        linear-gradient(135deg, rgba(220,2,120,0.18), rgba(235,94,45,0.16)),
+        rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.12);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+
+    .big-statement h2 {
+      max-width: 850px;
+      margin: 0 auto 16px;
+    }
+
+    .big-statement p {
+      color: var(--muted);
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    .layer-card {
+      position: relative;
+      overflow: hidden;
+      min-height: 260px;
+    }
+
+    .layer-label {
+      display: inline-flex;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(235,94,45,0.14);
+      color: var(--orange);
+      font-size: 0.8rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .flow-step {
+      background: rgba(255,255,255,0.055);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 14px 10px;
+      text-align: center;
+      color: var(--white);
+      font-size: 0.83rem;
+      font-weight: 700;
+    }
+
+    .dashboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+      margin-top: 22px;
+    }
+
+    .metric {
+      background: rgba(255,255,255,0.055);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 20px;
+    }
+
+    .metric .value {
+      color: var(--white);
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.05em;
+      margin-bottom: 4px;
+    }
+
+    .metric .label {
+      color: var(--muted);
+      font-size: 0.88rem;
+    }
+
+    .decision-map {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .decision-row {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 12px;
+      align-items: stretch;
+    }
+
+    .decision-type {
+      background: linear-gradient(135deg, rgba(220,2,120,0.20), rgba(235,94,45,0.14));
+      border: 1px solid rgba(235,94,45,0.24);
+      border-radius: 18px;
+      padding: 16px;
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .decision-owner {
+      background: rgba(255,255,255,0.045);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 16px;
+      color: var(--muted);
+    }
+
+    .traits {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 22px;
+    }
+
+    .trait {
+      background: linear-gradient(135deg, var(--magenta), #B9237C);
+      color: var(--white);
+      padding: 9px 15px;
+      border-radius: 999px;
+      font-size: 0.86rem;
+      font-weight: 700;
+    }
+
+    .cta-final {
+      text-align: center;
+      padding: 78px 28px;
+      border-radius: 34px;
+      background:
+        radial-gradient(circle at top, rgba(235,94,45,0.18), transparent 35%),
+        linear-gradient(135deg, rgba(220,2,120,0.18), rgba(255,255,255,0.04));
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+    }
+
+    .cta-final h2 {
+      margin-bottom: 16px;
+    }
+
+    .cta-final p {
+      color: var(--muted);
+      max-width: 680px;
+      margin: 0 auto 26px;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 42px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    footer .payoff {
+      font-weight: 800;
+      color: var(--white);
+      font-size: 1.12rem;
+      margin-bottom: 4px;
+    }
+
+    @media (max-width: 920px) {
+      .hero-grid,
+      .grid-4,
+      .grid-3,
+      .grid-2,
+      .dashboard {
+        grid-template-columns: 1fr;
+      }
+
+      header.hero {
+        padding-top: 58px;
+        min-height: auto;
+      }
+
+      .hero-panel {
+        padding: 22px;
+      }
+
+      .flow {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .decision-row {
+        grid-template-columns: 1fr;
+      }
+
+      nav {
+        justify-content: flex-start;
+        overflow-x: auto;
+        flex-wrap: nowrap;
+      }
+
+      nav::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .container {
+        width: min(100% - 28px, 1120px);
+      }
+
+      section {
+        padding: 60px 0;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .hero p,
+      .section-header p,
+      .cta-final p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    #problemaIl problema</a>
+    #paradigmaCambio</a>
+    #azioneMOA in azione</a>
+    #decision-rightsDecision Rights</a>
+    #valueValue Realization</a>
+    #riskAI Risk Gate</a>
+    #radiciRadici</a>
+    #agicPerché Agic</a>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Agic Agentic Operating Model</div>
+        <h1><span class="hero-title-accent">MOA</span></h1>
+        <h2>The Operating System for the Agentic Enterprise</h2>
+        <p>
+          Dal primo use case a un portafoglio governato di agenti AI in produzione.
+          MOA aiuta le aziende a trasformare la sperimentazione AI in valore misurabile,
+          scalabile e sostenibile.
+        </p>
+
+        <div class="cta-row">
+          #azioneEsplora il framework</a>
+          #valueScopri il valore</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <div class="agent-stack">
+          <div class="stack-card">
+            <strong>AI Experiments</strong>
+            <span>POC, demo e iniziative isolate.</span>
+          </div>
+          <div class="stack-card">
+            <strong>AI Agents</strong>
+            <span>Automazioni intelligenti da governare lungo il ciclo di vita.</span>
+          </div>
+          <div class="stack-card stack-center">
+            <strong>MOA Operating Model</strong>
+            <span>Portfolio, governance, risk gate, decision rights e value realization.</span>
+          </div>
+          <div class="stack-card">
+            <strong>Enterprise Scale</strong>
+            <span>Un sistema operativo per portare l'AI agentica in produzione.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="problema">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Il problema</div>
+          <h2>Le aziende non hanno bisogno di altri esperimenti AI. Hanno bisogno di scalarli.</h2>
+          <p>
+            Molte aziende hanno già lanciato POC, demo e sperimentazioni. Il gap non è tecnologico:
+            è la traduzione operativa dell'AI in valore di business misurabile.
+          </p>
+        </div>
+
+        <div class="grid-4">
+          <div class="card">
+            <div class="icon">01</div>
+            <h3>No ownership</h3>
+            <p>Mancano responsabilità chiare su valore, evoluzione funzionale, tecnologia e rischio.</p>
+          </div>
+          <div class="card">
+            <div class="icon">02</div>
+            <h3>No prioritization</h3>
+            <p>Troppe idee, pochi criteri condivisi per decidere quali use case attivare prima.</p>
+          </div>
+          <div class="card">
+            <div class="icon">03</div>
+            <h3>No governance</h3>
+            <p>Gli agenti crescono più velocemente dei controlli, delle regole e dei processi decisionali.</p>
+          </div>
+          <div class="card">
+            <div class="icon">04</div>
+            <h3>No value tracking</h3>
+            <p>Senza baseline, KPI e misurazione economica, il valore resta difficile da dimostrare.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="paradigma">
+      <div class="container">
+        <div class="big-statement">
+          <h2>Building agents is easy. Operating them at enterprise scale is the real challenge.</h2>
+          <p>
+            Il passaggio è chiaro: da use case isolati a portafoglio AI gestito,
+            da sperimentazione spot a sistema industriale ripetibile,
+            da valore episodico a valore continuo e misurabile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="azione">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">MOA in azione</div>
+          <h2>Due layer per governare l'AI agentica dall'idea alla scala.</h2>
+          <p>
+            MOA combina un layer di portfolio management e un layer di control tower
+            per rendere governabile l'intero ciclo di vita degli agenti AI.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card layer-card">
+            <span class="layer-label">Layer 1</span>
+            <h3>MOA Portfolio</h3>
+            <p>
+              Identifica, valuta, prioritizza e attiva use case e agenti AI:
+              Demand Generation, Use Case Pipeline, MOA Scoring e Activation.
+            </p>
+
+            <div class="flow">
+              <div class="flow-step">Demand</div>
+              <div class="flow-step">Pipeline</div>
+              <div class="flow-step">Scoring</div>
+              <div class="flow-step">Priority</div>
+              <div class="flow-step">Activation</div>
+              <div class="flow-step">Scale</div>
+            </div>
+          </div>
+
+          <div class="card layer-card">
+            <span class="layer-label">Layer 2</span>
+            <h3>MOA Control Tower</h3>
+            <p>
+              Governa il ciclo di vita degli agenti AI: Decision Rights, AI Risk Gate,
+              Value Realization, Lifecycle Management, Development Playbook e Adoption.
+            </p>
+
+            <div class="flow">
+              <div class="flow-step">Rights</div>
+              <div class="flow-step">Risk</div>
+              <div class="flow-step">Value</div>
+              <div class="flow-step">Lifecycle</div>
+              <div class="flow-step">Playbook</div>
+              <div class="flow-step">Adoption</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="decision-rights">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Decision Rights</div>
+          <h2>Il vero collo di bottiglia non è chi esegue, ma chi ha il diritto di decidere.</h2>
+          <p>
+            MOA definisce quattro categorie di decisioni e le distribuisce su una governance chiara:
+            Steering Committee AI, AI Working Team, Business Champion, Business Sponsor,
+            Product Owner e IT Owner.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="decision-map">
+            <div class="decision-row">
+              <div class="decision-type">Portfolio Decisions</div>
+              <div class="decision-owner">Quali use case entrano nel portafoglio e con quale priorità.</div>
+            </div>
+            <div class="decision-row">
+              <div class="decision-type">Execution Decisions</div>
+              <div class="decision-owner">Come gli agenti vengono progettati, realizzati, rilasciati ed evoluti.</div>
+            </div>
+            <div class="decision-row">
+              <div class="decision-type">Value Decisions</div>
+              <div class="decision-owner">Quali KPI, baseline, target e benefici economici vengono misurati.</div>
+            </div>
+            <div class="decision-row">
+              <div class="decision-type">Risk Decisions</div>
+              <div class="decision-owner">Quali controlli, approvazioni e livelli di autonomia sono necessari.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="value">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Value Realization</div>
+          <h2>Un agente AI senza misura di valore non è dimostrabile.</h2>
+          <p>
+            MOA applica una catena precisa: KPI, baseline, target, misurazione,
+            beneficio e valore economico. Se manca anche solo uno di questi elementi,
+            il valore non può essere dimostrato né comunicato al business.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Value chain</h3>
+          <div class="flow">
+            <div class="flow-step">KPI</div>
+            <div class="flow-step">Baseline</div>
+            <div class="flow-step">Target</div>
+            <div class="flow-step">Measure</div>
+            <div class="flow-step">Benefit</div>
+            <div class="flow-step">Economics</div>
+          </div>
+
+          <div class="dashboard">
+            <div class="metric">
+              <div class="value">€</div>
+              <div class="label">Valore economico atteso</div>
+            </div>
+            <div class="metric">
+              <div class="value">%</div>
+              <div class="label">Adozione e utilizzo</div>
+            </div>
+            <div class="metric">
+              <div class="value">Δ</div>
+              <div class="label">Miglioramento vs baseline</div>
+            </div>
+            <div class="metric">
+              <div class="value">ROI</div>
+              <div class="label">Beneficio comunicabile al business</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="risk">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">AI Risk Gate</div>
+          <h2>Ogni agente deve avere una classe di rischio e un livello di controllo coerente.</h2>
+          <p>
+            MOA valuta ogni agente su cinque dimensioni: Data Risk, Decision Risk,
+            Business Impact Risk, Autonomy Risk e Adoption Risk. Da questa valutazione
+            derivano Risk Score, Risk Class, controlli e approvazioni necessarie.
+          </p>
+        </div>
+
+        <div class="grid-5 grid-4">
+          <div class="card">
+            <h3>Data Risk</h3>
+            <p>Quali dati usa l'agente e con quale livello di sensibilità.</p>
+          </div>
+          <div class="card">
+            <h3>Decision Risk</h3>
+            <p>Quanto l'agente influenza decisioni operative o manageriali.</p>
+          </div>
+          <div class="card">
+            <h3>Impact Risk</h3>
+            <p>Quale impatto può generare su processi, clienti o risultati.</p>
+          </div>
+          <div class="card">
+            <h3>Autonomy Risk</h3>
+            <p>Quanto l'agente agisce in autonomia rispetto al controllo umano.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="radici">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-kicker">Radici e differenziazione</div>
+          <h2>MOA nasce dall'integrazione tra benchmark, esperienza Agic e contesto cliente.</h2>
+          <p>
+            Si collega e si differenzia da Portfolio Management, AI Operating Model,
+            NIST AI RMF, Microsoft CAF AI Adoption e Agile Product Delivery,
+            integrando i principi migliori per gli agenti AI.
+          </p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Benchmark di mercato</h3>
+            <p>Integra logiche di portfolio, governance, risk management e adoption.</p>
+          </div>
+          <div class="card">
+            <h3>Esperienza diretta Agic</h3>
+            <p>Nasce dall'esperienza su trasformazione digitale, Microsoft platform e AI adoption.</p>
+          </div>
+          <div class="card">
+            <h3>Contesto cliente</h3>
+            <p>Parte dai problemi reali delle aziende che vogliono portare l'AI in produzione.</p>
+          </div>
+        </div>
+
+        <div class="traits">
+          <span class="trait">Business-first</span>
+          <span class="trait">Portfolio-native</span>
+          <span class="trait">Execution-linked</span>
+          <span class="trait">Agent-specific</span>
+          <span class="trait">Value-measured</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="agic">
+      <div class="container">
+        <div class="cta-final">
+          <div class="section-kicker">Perché Agic</div>
+          <h2>From AI experiments to enterprise-scale agentic operations.</h2>
+          <p>
+            Agic accompagna le aziende dall'idea alla scala: non solo tecnologia,
+            ma un modello operativo per trasformare l'AI in valore misurabile,
+            governato e sostenibile nel tempo.
+          </p>
+          <div class="cta-row" style="justify-content:center;">
+            #problemaRiparti dal problema</a>
+            #azioneVedi il modello</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="payoff">Amplify the future.</div>
+    <div>Agic - MOA Agentic Operating Model</div>
+  </footer>
+
+</body>
+</html>
